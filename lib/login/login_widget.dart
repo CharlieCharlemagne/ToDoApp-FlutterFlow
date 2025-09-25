@@ -126,6 +126,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                         .headlineLarge
                                         .fontStyle,
                                   ),
+                                  fontSize: 28.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .headlineLarge
