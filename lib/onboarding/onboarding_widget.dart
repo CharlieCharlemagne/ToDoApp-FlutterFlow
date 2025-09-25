@@ -73,19 +73,14 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Profile',
-                        style:
-                            FlutterFlowTheme.of(context).headlineLarge.override(
-                                  font: GoogleFonts.interTight(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .headlineLarge
-                                        .fontWeight,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .headlineLarge
-                                        .fontStyle,
-                                  ),
-                                  letterSpacing: 0.0,
+                      Align(
+                        alignment: AlignmentDirectional(-1.0, -1.0),
+                        child: Text(
+                          'Profile',
+                          style: FlutterFlowTheme.of(context)
+                              .headlineLarge
+                              .override(
+                                font: GoogleFonts.interTight(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .fontWeight,
@@ -93,6 +88,15 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                       .headlineLarge
                                       .fontStyle,
                                 ),
+                                letterSpacing: 0.0,
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .headlineLarge
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .headlineLarge
+                                    .fontStyle,
+                              ),
+                        ),
                       ),
                       Align(
                         alignment: AlignmentDirectional(0.0, 0.0),

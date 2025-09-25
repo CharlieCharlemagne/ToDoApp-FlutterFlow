@@ -90,7 +90,9 @@ class _LoginWidgetState extends State<LoginWidget>
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
-                          'assets/images/charlieapp-high-resolution-logo-grayscale-transparent.png',
+                          Theme.of(context).brightness == Brightness.dark
+                              ? 'assets/images/charlieapp-high-resolution-logo-transparent.png'
+                              : 'assets/images/charlieapp-high-resolution-logo-grayscale-transparent.png',
                           width: 200.0,
                           height: 197.9,
                           fit: BoxFit.contain,
